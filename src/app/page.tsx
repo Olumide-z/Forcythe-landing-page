@@ -1,6 +1,6 @@
 
 import HeroSection from "@/components/HeroSection";
-import Image from "next/image";
+
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/cta/CTA";

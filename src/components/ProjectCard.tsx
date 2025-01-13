@@ -9,7 +9,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ width, image }: ProjectCardProps) => {
-  const [isLoading, setIsLoading] = useState(true);
+  
   const [isPageLoaded, setIsPageLoaded] = useState(false);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const ProjectCard = ({ width, image }: ProjectCardProps) => {
         <Image
           alt="project image"
           src={image}
-          onLoad={() => setIsLoading(false)}
+          onLoad={() => setIsPageLoaded(false)}
           layout="fill"
           loading='lazy'
           objectFit="contain"

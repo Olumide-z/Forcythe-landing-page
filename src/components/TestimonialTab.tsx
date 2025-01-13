@@ -13,7 +13,7 @@ const TestimonialTab = () => {
     }, 13000);
 
     return () => clearInterval(interval);
-  }, [tabs.length, activeTab]);
+  }, [activeTab]);
 
   return (
     <div>

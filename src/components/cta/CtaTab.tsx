@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from "react";
-import CtaTabContent from "./CtaTabContent";
 import { ctaTabsData } from "@/utils/tab";
 
 const CtaTab = () => {
