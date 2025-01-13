@@ -1,0 +1,151 @@
+@import url('https://fonts.cdnfonts.com/css/lexend-deca');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.glass-div {
+  backdrop-filter: blur(0px); /* No blur applied to the backdrop */
+  background: rgba(255, 255, 255, 0.15); /* Light transparent background */
+}
+
+.ctaImage{
+  flex: 0.5;
+}
+
+@media screen and (max-width: 768px){
+  .ctaImage{
+    flex: none;
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .ctaImage{
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .ctaImage{
+    width: 320px;
+  }
+}
+
+/* Tailwind styles */
+@layer base {
+  .navStyles{
+    @apply transition-all z-[100] duration-300 fixed w-full text-white  flex items-center justify-between
+  }
+
+  .mobileLinks{
+    @apply absolute top-16  w-[250px] py-6 rounded-[30px] border mt-8 right-4 p-4
+  }
+
+  .textGradient{
+    @apply bg-gradient-to-r from-[#5ea6e9] to-[#64a4e2] bg-clip-text text-transparent
+  }
+
+  .tabStyle{
+    @apply flex gap-4 overflow-x-auto h-[70px] min-w-[500px] bg-transparent mb-4 rounded-[3rem] whitespace-nowrap border border-[#1e3158] items-center justify-start
+  }
+
+  .pageMargin{
+    @apply min-[980px]:mx-24 min-[650px]:mx-8 mx-5
+  }
+
+  .footerIcon{
+    @apply w-[40px] h-[40px] rounded-full flex items-center justify-center border
+  }
+}
+
+/* Writing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing-animation {
+  overflow: hidden; /* Ensures text is clipped during animation */
+  white-space: nowrap; /* Prevents text from wrapping */
+  display: inline-block; /* Required for the typing effect */
+  animation-timing-function: ease-in-out; /* Makes the animation smoother */
+}
+
+.typing-animation-1 {
+  animation: typing 3s steps(40, end) forwards; /* Typing effect for the first text */
+}
+
+
+
+/* Ligthen animation */
+@keyframes borderEffect {
+  0% {
+    border-color: #a2a8b9 transparent transparent transparent;
+  }
+  25% {
+    border-color: transparent #a2a8b9 transparent transparent;
+  }
+  50% {
+    border-color: transparent transparent #a2a8b9 transparent;
+  }
+  75% {
+    border-color: transparent transparent transparent #a2a8b9;
+  }
+  100% {
+    border-color: #a2a8b9 transparent transparent transparent;
+  }
+}
+
+.card-container {
+  position: relative;
+  padding: 2rem;
+  max-width: 350px;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  animation: borderEffect 2s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.card-container:hover {
+  animation: none; /* Stop animation on hover */
+  border-color: #3c6593; /* Blue border */
+}
+
+.card-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c6593;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1200px){
+  .card-container {
+    padding: 2rem 1.5rem;
+    max-width: 280px
+  }
+}
+
+@media screen and (max-width: 900px){
+  .card-container {
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+  }
+}
