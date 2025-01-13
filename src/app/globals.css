@@ -50,7 +50,7 @@ body{
   }
 
   .mobileLinks{
-    @apply absolute top-16  w-[250px] py-6 rounded-[30px] border mt-8 right-4 p-4
+    @apply absolute top-16  w-[250px] py-6 rounded-[30px]  mt-8 right-4 p-4
   }
 
   .textGradient{

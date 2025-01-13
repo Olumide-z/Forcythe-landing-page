@@ -33,15 +33,15 @@ const Portfolio = () => {
       </div>
 
       {/* Content Layer */}
-      <div className="relative z-10 flex flex-col items-center justify-end sm:pb-[2rem] pb-0 h-full text-center text-white px-4">
-        <h3 className="text-white min-[500px]:text-[1.8rem] text-[1rem] lg:w-[35%] w-full leading-tight">
+      <div className="relative z-10 flex flex-col items-center justify-end min-[500px]:pb-[2rem] pb-4 h-full text-center text-white px-4">
+        <h3 className="text-white min-[500px]:text-[1.8rem] text-[1.2rem] lg:w-[35%] w-full text-center leading-tight">
           We build solutions that help
           <span className="textGradient"> businesses</span> of all sizes to
           <span className="textGradient"> scale</span>
         </h3>
 
         {/* Achievements Section */}
-        <div className="flex flex-wrap justify-center gap-6 sm:mt-4">
+        <div className="flex flex-wrap justify-center gap-6 sm:mt-4 mt-2">
           {portfolio.map((item, index) => (
             <div
               key={index}
