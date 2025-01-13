@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import SocialsIcons from './SocialsIcons'
 import { footerLinks } from '@/utils/constants'
-import Newsletter from '../Newsletter'
+import Newsletter from './Newsletter'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();

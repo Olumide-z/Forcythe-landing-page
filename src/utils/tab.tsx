@@ -1,4 +1,4 @@
-import TestimonialContent from "@/components/TestimonialContent";
+import TestimonialContent from "@/components/testimonials-section/TestimonialContent";
 import { TestimonialData } from "./constants";
 import CtaTabContent from "@/components/cta/CtaTabContent";
 
@@ -13,6 +13,7 @@ export const tabs = [
         desc={TestimonialData[0].desc}
         image={TestimonialData[0].image}
         subText={TestimonialData[0].subText}
+        right={600}
       />
     ),
   },
@@ -25,7 +26,7 @@ export const tabs = [
         desc={TestimonialData[1].desc}
         image={TestimonialData[1].image}
         subText={TestimonialData[1].subText}
-        right={330}
+        right={400}
       />
     ),
   },
@@ -38,7 +39,7 @@ export const tabs = [
         desc={TestimonialData[2].desc}
         image={TestimonialData[2].image}
         subText={TestimonialData[2].subText}
-        right={100}
+        right={400}
       />
     ),
   },
@@ -51,7 +52,7 @@ export const tabs = [
         desc={TestimonialData[3].desc}
         image={TestimonialData[3].image}
         subText={TestimonialData[3].subText}
-        right={200}
+        right={300}
       />
     ),
   },
@@ -64,7 +65,7 @@ export const tabs = [
         desc={TestimonialData[4].desc}
         image={TestimonialData[4].image}
         subText={TestimonialData[4].subText}
-        right={0}
+        right={200}
       />
     ),
   },

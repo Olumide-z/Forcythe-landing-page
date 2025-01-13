@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 import splitString from '@/utils/splitString'; // Make sure this utility is correct
 import { motion } from 'framer-motion';
-import Button from './Button';
+import Button from '../Button';
 
 const HeroSection = () => {
   const smallText =
@@ -20,7 +20,7 @@ const HeroSection = () => {
 
   return (
     <>
-    <section className="min-[950px]:pt-[120px] pt-[50px] relative w-full min-h-screen flex items-center justify-center">
+    <section className="min-[950px]:pt-[120px] min-[500px]:pt-[50px] pt-[30px] relative w-full min-h-screen flex items-center justify-center">
       <Image
         src="/images/header-background.svg"
         alt="header image"
@@ -28,7 +28,7 @@ const HeroSection = () => {
         className="bg-forcythe-darkBg min-[850px]:mt-[100px] mt-[75px] object-cover"
       />
       <div className="glass-div flex items-start flex-col absolute pageMargin z-10 min-[600px]:p-10 py-9 px-4 rounded-[4rem] shadow-lg">
-        <h1 className="min-[850px]:text-[5rem] min-[650px]:text-[4rem] text-[3rem] font-[500] min-[1200px]:w-[85%] w-full min-[650px]:leading-[4.5rem] leading-[3.5rem] text-white">
+        <h1 className="min-[850px]:text-[5rem] min-[650px]:text-[4rem] text-[3.2rem] font-[500] min-[1200px]:w-[85%] w-full min-[650px]:leading-[4.5rem] leading-[3.5rem] text-white">
           We build <span className='textGradient'>products</span> that shape a better future
         </h1>
         <motion.p

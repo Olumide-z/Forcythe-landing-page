@@ -5,7 +5,7 @@ import React from "react";
 const Portfolio = () => {
   return (
     <section
-      className="relative h-screen pb-8 md:pb-[4rem]"
+      className="relative lg-h-screen min-[900px]:h-[750px] min-[500px]:h-[700px] h-[400px] py-8 md:pb-[4rem]"
       style={{
         background: "linear-gradient(rgb(12, 38, 69) 20%, rgb(3, 5, 22) 60%)",
       }}
@@ -28,26 +28,26 @@ const Portfolio = () => {
           alt="arc"
           width={1920}
           height={1080}
-          className="w-[60%] h-[60%] object-contain"
+          className="md:w-[90%] w-full md:h-[90%] object-contain"
         />
       </div>
 
       {/* Content Layer */}
-      <div className="relative z-10 flex flex-col items-center justify-end pb-[2rem] h-full text-center text-white px-4">
-        <h3 className="text-white text-[1.8rem] w-[35%] leading-tight">
+      <div className="relative z-10 flex flex-col items-center justify-end sm:pb-[2rem] pb-0 h-full text-center text-white px-4">
+        <h3 className="text-white min-[500px]:text-[1.8rem] text-[1rem] lg:w-[35%] w-full leading-tight">
           We build solutions that help
           <span className="textGradient"> businesses</span> of all sizes to
           <span className="textGradient"> scale</span>
         </h3>
 
         {/* Achievements Section */}
-        <div className="flex flex-wrap justify-center gap-6 mt-8">
+        <div className="flex flex-wrap justify-center gap-6 sm:mt-4">
           {portfolio.map((item, index) => (
             <div
               key={index}
               className="flex flex-col items-center text-center gap-2"
             >
-              <p className="textGradient text-[2rem] font-bold sm:text-[2.5rem] lg:text-[3rem]">
+              <p className="textGradient min-[450px]:text-[2rem] tex-[1.4rem] font-bold sm:text-[2.5rem] lg:text-[3rem]">
                 {item.number}+
               </p>
               <p className="text-white text-sm sm:text-base lg:text-lg">

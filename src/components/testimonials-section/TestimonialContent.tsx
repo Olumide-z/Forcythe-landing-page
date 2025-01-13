@@ -64,13 +64,13 @@ const TestimonialContent = ({
 
   return (
     <div
-      className="flex items-start gap-4 absolute p-5 h-fit max-w-[550px] text-white rounded-2xl bg-forcythe-blueDark2"
+      className="flex min-[550px]:items-start testimonial items-center min-[550px]:flex-row  flex-col gap-4 absolute p-5 h-fit min-[600px]:max-w-[550px] max-w-[400px] text-white rounded-2xl bg-forcythe-blueDark2"
       style={{
         right: right !== undefined ? `${right}px` : "auto",
         left: left !== undefined ? `${left}px` : "auto",
       }}
     >
-      <div className="w-[70%]">
+      <div className="min-[550px]:w-[70%] w-full">
         <h3 className="font-bold mb-4">{name}</h3>
 
         {/* Character animation */}

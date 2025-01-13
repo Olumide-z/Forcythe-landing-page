@@ -1,8 +1,8 @@
 
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/hero-section/HeroSection";
 
-import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
+import Projects from "@/components/projects-section/Projects";
+import Testimonials from "@/components/testimonials-section/Testimonials";
 import CTA from "@/components/cta/CTA";
 import BlogSection from "@/components/blog-section/BlogSection";
 import Portfolio from "@/components/portfoilio/Portfolio";

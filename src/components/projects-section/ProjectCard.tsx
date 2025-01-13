@@ -30,7 +30,6 @@ const ProjectCard = ({ width, image }: ProjectCardProps) => {
         <Image
           alt="project image"
           src={image}
-          onLoad={() => setIsPageLoaded(false)}
           layout="fill"
           loading='lazy'
           objectFit="contain"

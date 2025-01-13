@@ -8,7 +8,7 @@ interface BlogCardProps {
 
 const BlogCard = ({ image, title }: BlogCardProps) => {
   return (
-    <div className="bg-transparent h-[400px] w-[350px] rounded-lg shadow-md overflow-hidden transition-all transform hover:scale-105 hover:cursor-pointer hover:border-[.8px] border-[#b4cdec] group">
+    <div className="bg-transparent h-[400px] md:w-[350px] w-full rounded-lg shadow-md overflow-hidden transition-all transform hover:scale-105 hover:cursor-pointer hover:border-[.8px] border-[#b4cdec] group">
       {/* Image at the top */}
       <div className="relative h-52 w-full overflow-hidden">
         <Image
