@@ -1,14 +1,14 @@
-function splitString (inputString: string): string[] {
+function splitString(inputString: string): string[] {
     const characters: string[] = [];
-    const regex = /[\s\S]/gu;
+    // Match HTML tags as a single unit or individual characters
+    const regex = /(<[^>]+>|[\s\S])/gu;
 
     let match;
-
-    while ((match = regex.exec(inputString)) !== null){
-        characters.push(match[0])
-    };
+    while ((match = regex.exec(inputString)) !== null) {
+        characters.push(match[0]);
+    }
 
     return characters;
 }
 
-export default splitString
+export default splitString;

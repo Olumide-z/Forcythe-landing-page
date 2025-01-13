@@ -69,7 +69,9 @@ const Navbar = () => {
             <Image src='/images/menu.svg' alt='Menu Icon' width={20} height={20}/>
         </div>
         {/* Menu bar links */}
-        <div className={`min-[850px]:hidden ${isMenuOpen ? 'block' : 'hidden'} animate-lighten mobileLinks bg-forcythe-darkBg`}>
+        <div className={`min-[850px]:hidden ${isMenuOpen ? 'block' : 'hidden'} animate-lighten mobileLink`}
+        style={{ background: 'linear-gradient(0deg, rgba(7, 22, 38, 0) 32%, rgb(7, 22, 38) 85%)'}}
+        >
             {navlinks.map((link, index) => (
                 <Link key={index} href={link.link} className='block py-2 text-white font-[500]'>
                     <p>{link.name}</p>
